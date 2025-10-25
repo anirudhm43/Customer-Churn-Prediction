@@ -1,0 +1,7 @@
+# Ignore large or unnecessary files
+data/
+*.zip
+*.rar
+venv/
+__pycache__/
+*.ipynb_checkpoints/
