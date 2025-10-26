@@ -21,6 +21,7 @@ The goal of this project is to **build a machine learning model** that predicts 
 - **Format:** CSV file (7043 rows × 21 columns)  
 - **Target Variable:** `Churn` (Yes = 1, No = 0)  
 - **Description:** The dataset contains customer demographics, account information, service usage, and churn labels.
+- **Detailed Report of the Dataset Analysis:** https://www.notion.so/Customer-Churn-Predictor-ML-Model-2972da7f7c2580ee8df7ce6b673587ca?source=copy_link
 
 ---
 
@@ -97,6 +98,8 @@ User Interface (Streamlit)
 - **Dataset Link:** [Kaggle Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)  
 - **Frameworks Identified:** Python, Pandas, Scikit-learn, XGBoost, SHAP, Streamlit  
 - **Architecture Diagram (Drive):** https://drive.google.com/file/d/1NHy53GrwCCu_6Q-NSx0H97zTjeFhq8oT/view?usp=drive_link
+- **Detailed Report of the Dataset Analysis:** https://www.notion.so/Customer-Churn-Predictor-ML-Model-2972da7f7c2580ee8df7ce6b673587ca?source=copy_link
+
 
 ---
 

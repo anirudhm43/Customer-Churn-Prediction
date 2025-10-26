@@ -1,0 +1,10 @@
+
+GitHub Repo:https://github.com/anirudhm43/Customer-Churn-Prediction.git
+
+Dataset Link:https://www.kaggle.com/blastchar/telco-customer-churn
+
+Frameworks Used: Python, Pandas, Scikit-learn, XGBoost, SHAP, Streamlit
+
+Architecture Diagram: https://drive.google.com/file/d/1NHy53GrwCCu_6Q-NSx0H97zTjeFhq8oT/view?usp=drive_link
+
+Detailed Report of the Dataset Analysis:https://www.notion.so/Customer-Churn-Predictor-ML-Model-2972da7f7c2580ee8df7ce6b673587ca?source=copy_link
