@@ -1,0 +1,37 @@
+# Core Python Libraries
+numpy==1.26.4
+pandas==2.2.3
+
+# Machine Learning
+scikit-learn==1.5.2
+xgboost==2.1.1
+lightgbm==4.5.0
+catboost==1.2.5
+
+# Explainability / XAI
+shap==0.46.0
+lime==0.2.0.1
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
+
+# Dashboard / Web App (optional)
+streamlit==1.39.0
+flask==3.0.3
+
+# Utility
+joblib==1.4.2
+tqdm==4.66.5
+
+# Data Validation / EDA
+sweetviz==2.3.1
+pandas-profiling==3.6.6
+
+# For model deployment / APIs
+fastapi==0.115.0
+uvicorn==0.30.6
+
+# For hyperparameter tuning
+optuna==4.0.0
