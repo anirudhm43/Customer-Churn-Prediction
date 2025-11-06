@@ -5,6 +5,8 @@ Dataset Link:https://www.kaggle.com/blastchar/telco-customer-churn
 
 Frameworks Used: Python, Pandas, Scikit-learn, XGBoost, SHAP, Streamlit
 
-Architecture Diagram: https://drive.google.com/file/d/1NHy53GrwCCu_6Q-NSx0H97zTjeFhq8oT/view?usp=drive_link
+Architecture Diagram 
+Workflow : https://drive.google.com/file/d/1684BqEauEvXbs5M2dRkIuRqaCSmsBkd5/view?usp=sharing
+Project Folder Structure:https://drive.google.com/file/d/1-a2dPpmQWah9Amqll2-oGb_CF039sO5H/view?usp=sharing
 
 Detailed Report of the Dataset Analysis:https://www.notion.so/Customer-Churn-Predictor-ML-Model-2972da7f7c2580ee8df7ce6b673587ca?source=copy_link

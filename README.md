@@ -25,6 +25,8 @@ The goal of this project is to **build a machine learning model** that predicts 
 
 ---
 
+**Week 1:** :
+
 ## ⚙️ Frameworks & Tools Used  
 | Category | Tools / Libraries |
 |-----------|-------------------|
@@ -86,6 +88,103 @@ User Interface (Streamlit)
 
 ---
 
+
+
+**Week 2:**
+ 
+customer_churn_project/
+│
+├── data/
+│   ├── Telco-Customer-Churn.csv        # Raw dataset (read-only)
+│   ├── cleaned_churn_data.csv          # Processed dataset used for modeling
+│   └── feature_correlations.csv        # (Optional) Saved EDA outputs
+│
+├── notebooks/
+│   ├── Week2_Day1_Data_Preprocessing_EDA.ipynb   # Data cleaning & EDA
+│   ├── Week2_Day2_Baseline_Model.ipynb           # Baseline models & metrics
+│   └── Week2_Day3_Model_Comparison.ipynb         # Model comparison (future)
+│
+├── model/
+│   └── churn_model.pkl                 # Serialized best model (Joblib)
+│
+├── app/
+│   └── app.py                          # Streamlit app for churn prediction
+│
+├── results/
+│   ├── eda_plots/                      # Exported visualizations (PNG)
+│   └── metrics_report.csv              # Model metrics summary (optional)
+│
+├── README.md                           # Project documentation
+├── requirements.txt                    # Reproducible environment setup
+└── .gitignore                          # Ignore unnecessary/large files
+
+### Why This Structure?
+
+🧱 Separation of Concerns: Keeps datasets, notebooks, models, and app components well organized for collaboration.
+
+🔁 Reproducibility: requirements.txt and versioned notebooks ensure that experiments can be replicated easily.
+
+🛡️ Data Safety: Raw data is never modified — cleaned versions are saved separately to preserve integrity.
+
+🚀 Deployability: The app/ directory hosts a ready-to-deploy Streamlit web app powered by the saved model.
+
+
+
+Day 1: Data Preprocessing & EDA
+### Data Preprocessing
+
+The goal was to prepare raw data for reliable modeling by cleaning and transforming it into a consistent, machine-readable format.
+
+Key Steps:
+
+Handled missing or invalid values (notably in TotalCharges)
+
+Encoded categorical variables and the target label (Churn → 1/0)
+
+Verified correct data types and normalized key columns
+
+Saved the processed dataset as cleaned_churn_data.csv
+
+✅ Outcome:
+A clean, structured, and bias-free dataset ready for training and feature analysis.
+
+
+
+### Exploratory Data Analysis (EDA)
+
+EDA helped uncover trends, patterns, and relationships in the data to guide model design.
+
+Highlights:
+
+Churn distribution: ~26% of customers churned (moderate imbalance)
+
+Key features affecting churn: tenure, monthly charges, and contract type
+
+Identified Top 10 correlated features with churn
+
+Generated visual insights to support data-driven feature selection
+
+Purpose:
+Ensure the dataset is understood, trustworthy, and rich in actionable features before model development.
+
+### Model Explainability – SHAP Analysis
+
+After model training, SHAP (SHapley Additive exPlanations) was used to interpret feature importance and understand why customers churn.
+
+**Top Influential Factors:**
+- 📄 **Contract Type** – Customers with longer-term contracts (1–2 years) are far less likely to churn.
+- ⏳ **Tenure** – Longer tenure strongly reduces churn; new users are more likely to leave.
+- 💸 **Monthly Charges** – Higher monthly bills increase churn probability.
+- 💳 **Payment Method** – Customers paying via electronic check churn more often.
+- 🌐 **Internet Service Type** – Fiber optic users show higher churn, possibly due to higher costs.
+- 🔒 **Online Security / Tech Support** – Availability of these add-ons helps retain customers.
+
+These insights can help the business **design targeted retention strategies**, like:
+- Offering discounts for high-value fiber customers.
+- Encouraging longer contract sign-ups.
+- Promoting bundled security or tech support services.
+
+
 ## 🚀 Planned Implementation Steps  
 1. **Week 1:** Problem understanding, dataset and framework selection, architecture design.  
 2. **Week 2:** Data preprocessing, model training, evaluation.  
@@ -97,7 +196,8 @@ User Interface (Streamlit)
 - **GitHub Repository:** https://github.com/anirudhm43/Customer-Churn-Prediction.git 
 - **Dataset Link:** [Kaggle Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)  
 - **Frameworks Identified:** Python, Pandas, Scikit-learn, XGBoost, SHAP, Streamlit  
-- **Architecture Diagram (Drive):** https://drive.google.com/file/d/1NHy53GrwCCu_6Q-NSx0H97zTjeFhq8oT/view?usp=drive_link
+- **Architecture Diagram (Drive):**https://drive.google.com/file/d/1684BqEauEvXbs5M2dRkIuRqaCSmsBkd5/view?usp=sharing
+
 - **Detailed Report of the Dataset Analysis:** https://www.notion.so/Customer-Churn-Predictor-ML-Model-2972da7f7c2580ee8df7ce6b673587ca?source=copy_link
 
 
