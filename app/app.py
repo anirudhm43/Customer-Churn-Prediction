@@ -16,8 +16,8 @@ st.set_page_config(
 # ---------------------------------------------------------------
 #  Load Model and Metadata
 # ---------------------------------------------------------------
-model = joblib.load("../model/churn_model.pkl")
-feature_columns = joblib.load("../model/feature_columns.pkl")
+model = joblib.load("model/churn_model.pkl")
+feature_columns = joblib.load("model/feature_columns.pkl")
 
 # ---------------------------------------------------------------
 #  Custom CSS Styling
