@@ -95,77 +95,76 @@ User Interface (Streamlit)
 customer_churn_project/
 │
 ├── data/
-│   ├── Telco-Customer-Churn.csv        # Raw dataset (read-only)
-│   ├── cleaned_churn_data.csv          # Processed dataset used for modeling
-│   └── feature_correlations.csv        # (Optional) Saved EDA outputs
+│   ├── Telco-Customer-Churn.csv
+│   ├── cleaned_churn_data.csv
+│   └── feature_correlations.csv
 │
 ├── notebooks/
-│   ├── Week2_Day1_Data_Preprocessing_EDA.ipynb   # Data cleaning & EDA
-│   ├── Week2_Day2_Baseline_Model.ipynb           # Baseline models & metrics
-│   └── Week2_Day3_Model_Comparison.ipynb         # Model comparison (future)
+│   ├── Week2_Day1_Data_Preprocessing_EDA.ipynb
+│   ├── Week2_Day2_Baseline_Model.ipynb
+│   └── Week2_Day3_Model_Comparison.ipynb
 │
 ├── model/
-│   └── churn_model.pkl                 # Serialized best model (Joblib)
+│   └── churn_model.pkl
 │
 ├── app/
-│   └── app.py                          # Streamlit app for churn prediction
+│   └── app.py
 │
 ├── results/
-│   ├── eda_plots/                      # Exported visualizations (PNG)
-│   └── metrics_report.csv              # Model metrics summary (optional)
+│   ├── eda_plots/
+│   └── metrics_report.csv
 │
-├── README.md                           # Project documentation
-├── requirements.txt                    # Reproducible environment setup
-└── .gitignore                          # Ignore unnecessary/large files
+├── README.md
+├── requirements.txt
+└── .gitignore
+
+---
+
 
 ### Why This Structure?
 
-🧱 Separation of Concerns: Keeps datasets, notebooks, models, and app components well organized for collaboration.
+**🧱 Separation of Concerns:** Keeps datasets, notebooks, models, and app components well organized for collaboration.
 
-🔁 Reproducibility: requirements.txt and versioned notebooks ensure that experiments can be replicated easily.
+**🔁 Reproducibility:** requirements.txt and versioned notebooks ensure that experiments can be replicated easily.
 
-🛡️ Data Safety: Raw data is never modified — cleaned versions are saved separately to preserve integrity.
+**🛡️ Data Safety:** Raw data is never modified — cleaned versions are saved separately to preserve integrity.
 
-🚀 Deployability: The app/ directory hosts a ready-to-deploy Streamlit web app powered by the saved model.
+**🚀 Deployability:** The app/ directory hosts a ready-to-deploy Streamlit web app powered by the saved model.
 
+---
 
+###  Data Preprocessing & EDA
 
-Day 1: Data Preprocessing & EDA
 ### Data Preprocessing
 
 The goal was to prepare raw data for reliable modeling by cleaning and transforming it into a consistent, machine-readable format.
 
-Key Steps:
-
+**Key Steps:**
 Handled missing or invalid values (notably in TotalCharges)
-
 Encoded categorical variables and the target label (Churn → 1/0)
-
 Verified correct data types and normalized key columns
-
 Saved the processed dataset as cleaned_churn_data.csv
 
-✅ Outcome:
+**✅ Outcome:**
 A clean, structured, and bias-free dataset ready for training and feature analysis.
 
+---
 
 
 ### Exploratory Data Analysis (EDA)
 
 EDA helped uncover trends, patterns, and relationships in the data to guide model design.
 
-Highlights:
-
+**Highlights:**
 Churn distribution: ~26% of customers churned (moderate imbalance)
-
 Key features affecting churn: tenure, monthly charges, and contract type
-
 Identified Top 10 correlated features with churn
-
 Generated visual insights to support data-driven feature selection
 
-Purpose:
+**Purpose:**
 Ensure the dataset is understood, trustworthy, and rich in actionable features before model development.
+
+---
 
 ### Model Explainability – SHAP Analysis
 
@@ -185,10 +184,40 @@ These insights can help the business **design targeted retention strategies**, l
 - Promoting bundled security or tech support services.
 
 
+---
+
+### Week 3 –Streamlit App
+
+### 🖥️ Streamlit Web App (With Explainability)
+
+**Features:**
+Clean dashboard UI
+Takes customer inputs
+Predicts churn probability
+Shows confidence
+Displays Why or Reason
+Shows SHAP local bar graph
+Fully stylized UI
+
+---
+
+### 🚀 Deployment (Optional)
+
+**Deployment options:**
+Streamlit Cloud (free)
+Render / HuggingFace Spaces
+Docker-based deployment
+GCP / AWS / Azure
+
+(Current version deployed & tested on Streamlit Cloud.)
+
+---
+
+
 ## 🚀 Planned Implementation Steps  
 1. **Week 1:** Problem understanding, dataset and framework selection, architecture design.  
 2. **Week 2:** Data preprocessing, model training, evaluation.  
-3. **Week 3:** Explainability analysis, Streamlit app integration,final testing, report & deployment.
+3. **Week 3:** Streamlit app integration,final testing, report & deployment.
 
 ---
 
@@ -197,7 +226,7 @@ These insights can help the business **design targeted retention strategies**, l
 - **Dataset Link:** [Kaggle Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)  
 - **Frameworks Identified:** Python, Pandas, Scikit-learn, XGBoost, SHAP, Streamlit  
 - **Architecture Diagram (Drive):**https://drive.google.com/file/d/1684BqEauEvXbs5M2dRkIuRqaCSmsBkd5/view?usp=sharing
-
+- **Project Folder Structure:**https://drive.google.com/file/d/1-a2dPpmQWah9Amqll2-oGb_CF039sO5H/view?usp=sharing
 - **Detailed Report of the Dataset Analysis:** https://www.notion.so/Customer-Churn-Predictor-ML-Model-2972da7f7c2580ee8df7ce6b673587ca?source=copy_link
 
 
@@ -207,16 +236,7 @@ These insights can help the business **design targeted retention strategies**, l
 - ANIRUDH M
 - PRANAV K
 - SHRIYA K
-- SHRIYA MOHANTY
-
----
-
-### 🏁 Current Status  
-✅ Problem Statement Finalized  
-✅ Dataset Identified  
-✅ Frameworks & Tools Chosen  
-✅ Architecture Diagram Created  
-🔜 Ready for Review  
+- SHRIYA MOHANTY 
 
 ---
 
