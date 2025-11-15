@@ -186,7 +186,22 @@ These insights can help the business **design targeted retention strategies**, l
 
 ---
 
-### Week 3 –Streamlit App
+### Week 3 – Explainability + Streamlit App
+
+### 🔍 Model Explainability (SHAP)
+
+**SHAP was used to determine:**
+Global Interpretability
+**What features matter overall?**
+Local Interpretability (Per Customer)
+**Why did this specific person churn?**
+Example local reasons:
+High monthly charges
+Short tenure
+Month-to-month contract
+These reasons are now displayed inside the Streamlit dashboard.
+
+---
 
 ### 🖥️ Streamlit Web App (With Explainability)
 
@@ -217,7 +232,7 @@ GCP / AWS / Azure
 ## 🚀 Planned Implementation Steps  
 1. **Week 1:** Problem understanding, dataset and framework selection, architecture design.  
 2. **Week 2:** Data preprocessing, model training, evaluation.  
-3. **Week 3:** Streamlit app integration,final testing, report & deployment.
+3. **Week 3:** Explainability analysis, Streamlit app integration,final testing, report & deployment.
 
 ---
 
