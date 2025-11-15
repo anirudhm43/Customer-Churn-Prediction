@@ -22,8 +22,8 @@ st.set_page_config(
 # ------------------------------------------------------------------------------------------------
 # Load Model + Features
 # ------------------------------------------------------------------------------------------------
-model = joblib.load("../model/churn_model.pkl")
-feature_columns = joblib.load("../model/feature_columns.pkl")
+model = joblib.load("model/churn_model.pkl")
+feature_columns = joblib.load("model/feature_columns.pkl")
 
 # ------------------------------------------------------------------------------------------------
 # Custom CSS Styling (Elegant Dashboard)
