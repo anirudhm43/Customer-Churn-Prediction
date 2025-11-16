@@ -84,7 +84,7 @@ User Interface (Streamlit)
 
 
 📁 **Architecture Diagram (Google Drive Link):**  
-[👉 View Diagram](https://drive.google.com/file/d/1NHy53GrwCCu_6Q-NSx0H97zTjeFhq8oT/view?usp=drive_link)
+[👉 View Diagram](https://drive.google.com/file/d/1684BqEauEvXbs5M2dRkIuRqaCSmsBkd5/view?usp=sharing)
 
 ---
 
@@ -183,6 +183,77 @@ These insights can help the business **design targeted retention strategies**, l
 - Encouraging longer contract sign-ups.
 - Promoting bundled security or tech support services.
 
+---
+
+### Baseline Models, Training & Evaluation
+
+**🔧 Baseline Model Training**
+After preprocessing the dataset, we trained a baseline classification model to establish initial performance benchmarks.
+The following steps were executed:
+
+**1️⃣ Train–Test Split**
+
+**Dataset split into:**
+80% training data
+20% testing data
+Stratification used to maintain churn ratio.
+
+
+**2️⃣ Baseline Model — Logistic Regression**
+Logistic Regression was chosen as the baseline because:
+
+It is simple, fast, and interpretable.
+
+Performs well on linearly separable high-dimensional data.
+
+Works effectively with one-hot encoded features.
+
+**The model was trained and evaluated using the following metrics:**
+Accuracy
+Precision
+Recall
+F1-Score
+ROC–AUC Score
+
+
+**3️⃣ Model Comparison**
+
+We trained three different models and compared them:
+
+Model	           Accuracy	 Precision  Recall	F1-Score	ROC-AUC
+Logistic Regression	0.7953	 0.6235	    0.5802	0.6011	    0.8309
+Random Forest	    0.7946	 0.6603	    0.4679	0.5477	    0.8258
+XGBoost         	0.7782	 0.5890	    0.5481	0.5678	    0.8196
+
+
+**4️⃣ Best Model Selection**
+
+✔ Logistic Regression was selected as the final model because:
+
+It achieved the highest ROC-AUC score (0.8309)
+
+It offered balanced precision and recall
+
+Lower complexity → more stable and predictable
+
+Works best with your encoded dataset
+
+This model was saved as:
+
+**model/churn_model.pkl**
+
+and used in the Streamlit app.
+
+
+**5️⃣ Final Pipeline Creation**
+
+A final prediction pipeline was built combining:
+✔ One-Hot Encoding
+✔ Feature Alignment
+✔ Logistic Regression model
+
+This ensures the Streamlit app receives correctly processed inputs during prediction.
+
 
 ---
 
@@ -240,8 +311,8 @@ GCP / AWS / Azure
 - **GitHub Repository:** https://github.com/anirudhm43/Customer-Churn-Prediction.git 
 - **Dataset Link:** [Kaggle Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)  
 - **Frameworks Identified:** Python, Pandas, Scikit-learn, XGBoost, SHAP, Streamlit  
-- **Architecture Diagram (Drive):**https://drive.google.com/file/d/1684BqEauEvXbs5M2dRkIuRqaCSmsBkd5/view?usp=sharing
-- **Project Folder Structure:**https://drive.google.com/file/d/1-a2dPpmQWah9Amqll2-oGb_CF039sO5H/view?usp=sharing
+- **Architecture Diagram (Drive):** https://drive.google.com/file/d/1684BqEauEvXbs5M2dRkIuRqaCSmsBkd5/view?usp=sharing
+- **Project Folder Structure:** https://drive.google.com/file/d/1-a2dPpmQWah9Amqll2-oGb_CF039sO5H/view?usp=sharing
 - **Detailed Report of the Dataset Analysis:** https://www.notion.so/Customer-Churn-Predictor-ML-Model-2972da7f7c2580ee8df7ce6b673587ca?source=copy_link
 
 
@@ -251,7 +322,7 @@ GCP / AWS / Azure
 - ANIRUDH M
 - PRANAV K
 - SHRIYA K
-- SHRIYA MOHANTY 
+- SHRIYADITHA
 
 ---
 
